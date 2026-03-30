@@ -1,18 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./assets/favion.png" />
-    <title>Hitesh Vishal | Full Stack Developer | MERN</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo"><img src="./assets/logo.png" alt="profile logo" /></div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./assets/favion.png" />
+  <title>Hitesh Vishal | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo"><img src="./assets/logo.png" alt="profile logo" /></div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="hamburger-logo">
+      <img src="./assets/logo.png" alt="profile logo" />
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="section__pic-container_img" src="./assets/profilePic1.png" alt="Hitesh Vishal profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">S V Hitesh Vishal</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/hiteshvishal_resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" target="_blank"
+          onclick="window.open('https://www.linkedin.com/in/hiteshvishal/', '_blank');" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon" target="_blank"
+          onclick="window.open('https://github.com/Hivis5', '_blank');" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__info-pic">
+        <img src="./assets/profilePic2.jpeg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>5 years Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B-Tech. Bachelors Of Technology</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            A highly driven Frontend Developer with over 5 years of experience architecting and delivering
+            high-performance, responsive web applications. Specializing in React, modern JavaScript, and UI/UX
+            principles, I have a proven track record of bridging the gap between design and scalable technical
+            solutions. Passionate about clean code, continuous innovation, and fostering collaborative team environments
+            to build exceptional digital experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="services">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Services</h1>
+    <!-- <div class="experience-details-container"> -->
+    <div class="about-details-container">
+      <div class="details-container-exp">
+        <h2 class="experience-sub-title">My Expertises</h2>
+        <p class="experience-sub-text">
+          My primary focus is creating intuitive, scalable, and highly impactful user experiences all while writing
+          clean code and acting as a technical product strategist to deliver the best solutions possible.
+        </p>
+        <div class="expertise-grid">
+          <div class="expertise-card">
+            <h3>UI/UX Design</h3>
+            <p>Crafting engaging, seamless, and intuitive digital experiences for all users.</p>
+          </div>
+          <div class="expertise-card">
+            <h3>Scalable Architecture</h3>
+            <p>Designing and building robust, scalable websites and structures built to last.</p>
+          </div>
+          <div class="expertise-card">
+            <h3>Clean Code & DevX</h3>
+            <p>Writing organized, readable code that makes teamwork and maintenance seamless.</p>
+          </div>
+          <div class="expertise-card">
+            <h3>Product Strategy</h3>
+            <p>Stepping into a product manager role to offer ideas that actively improve the project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="details-container-exp">
+        <h2 class="experience-sub-title">My Digital Tool Box</h2>
+        <p class="experience-sub-text">
+          These are my go to tech stack to make any projects happen. I am
+          always eager of learning more about my current stack, and new
+          technologies that could expand my horizons.
+        </p>
+        <div class="toolbox-grid">
+          <span class="tech-pill">Javascript</span>
+          <span class="tech-pill">HTML</span>
+          <span class="tech-pill">CSS</span>
+          <span class="tech-pill">ReactJS</span>
+          <span class="tech-pill">Material UI</span>
+          <span class="tech-pill">Tailwind</span>
+          <span class="tech-pill">Next JS</span>
+          <span class="tech-pill">Git</span>
+          <span class="tech-pill">Redux</span>
+          <span class="tech-pill">Node JS</span>
+          <span class="tech-pill">Express JS</span>
+          <span class="tech-pill">Mongo DB</span>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Professional Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div>
+          <p class="company">Flipkart</p>
+          <p>UI Developer (contract)</p>
+          <p class="doj">July 2024 - Present</p>
+          <p class="doj">Bengaluru, Karnataka, India</p>
+        </div>
+        <ul>
+          <li>
+            <strong>Major Feature Rollout</strong>: Played a key role in developing and successfully releasing a
+            critical feature for the Flipkart Big Billion Days (BBD) rollout.
+          </li>
+          <li>
+            <strong>Pricing Dashboard Modernization</strong>: Single-handedly managed the pricing dashboard, driving the
+            migration from a deprecated internal UI library to React. Successfully integrated comprehensive analytics
+            tracking and optimized the rule and policy creation flows.
+          </li>
+          <li>
+            <strong>Seller Growth & Insights</strong>: Concurrently collaborated with the growth team to build and
+            integrate seller insights directly into the seller dashboard.
+          </li>
+          <li>
+            <strong>Productivity Tooling</strong>: Spearheaded the development of a Chrome extension that provided
+            actionable product insights, significantly optimizing the product selection flow for sellers.
+          </li>
+          <li>
+            <strong>Ongoing Dashboard Development</strong>: Currently leading feature additions and enhancements for the
+            promotion creation dashboard alongside the core pricing dashboard.
+          </li>
+        </ul>
+      </div>
+      <div class="about-containers">
+        <div>
+          <p class="company">ThinkJS</p>
+          <p>Full-stack Developer</p>
+          <p class="doj">October 2022 – July 2024</p>
+        </div>
+        <ul>
+          <li>
+            <strong>Internal Tool Redesign</strong>: Spearheaded the complete redesign of internal tool websites to
+            minimize user reported bugs and vastly improve overall operational efficiency.
+          </li>
+          <li>
+            <strong>Campaign Outreach Optimization</strong>: Overhauled communication tools to drive higher campaign
+            engagement metrics across SMS, WhatsApp, and push notifications.
+          </li>
+          <li>
+            <strong>Payment Integration</strong>: Managed the seamless incorporation of multiple payment
+            functionalities, elevating user satisfaction and significantly boosting transaction success rates.
+          </li>
+          <li>
+            <strong>System Management Tools</strong>: Engineered comprehensive Incident Management and License
+            Management tools, successfully reducing system downtime and improving license compliance.
+          </li>
+          <li>
+            <strong>Attendance API Development</strong>: Built an Attendance API for seamless data collection and
+            dashboard integration, heavily reducing manual data entry errors while increasing data accuracy.
+          </li>
+        </ul>
+      </div>
+      <div class="about-containers">
+        <div>
+          <p class="company">Aidos</p>
+          <p>Frontend Developer</p>
+          <p class="doj">May 2021 - October 2022</p>
+        </div>
+        <ul>
+          <li>
+            <strong>Platform UI Optimization</strong>: Built and enhanced the user interface for an AI driven remote
+            work platform using ReactJS, which noticeably increased user engagement and reduced bounce rates.
+          </li>
+          <li>
+            <strong>Feature Integration</strong>: Developed and integrated key features including a LinkedIn style post
+            feed and a marketplace, significantly boosting user interactions and revenue.
+          </li>
+          <li>
+            <strong>Performance Enhancements</strong>: Streamlined data fetching and optimized overall page performance
+            using Axios and Swiper JS, resulting in faster and smoother page load experiences.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hiteshvishalsubramani@gmail.com"
+            target="_blank">hiteshvishalsubramani@gmail.com</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p>
+          <a href="https://www.linkedin.com/in/hiteshvishal/" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
@@ -21,417 +272,9 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="hamburger-logo">
-        <img src="./assets/logo.png" alt="profile logo" />
-      </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#services" onclick="toggleMenu()">Services</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-          class="section__pic-container_img"
-          src="./assets/profilePic1.jpeg"
-          alt="Hitesh Vishal profile picture"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">S V Hitesh Vishal</h1>
-        <p class="section__text__p2">Full-Stack MERN Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/hiteshvishal_resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            target="_blank"
-            onclick="window.open('https://www.linkedin.com/in/hiteshvishal/', '_blank');"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            target="_blank"
-            onclick="window.open('https://github.com/Hivis5', '_blank');"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/profilePic2.jpeg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>3 years <br />Full-Stack Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B-Tech. Bachelors Of Technology</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Experienced Full Stack Developer with a track record of accelerating project delivery, achieving milestones, and introducing innovative solutions. Proficient in React, JavaScript, HTML, and CSS, with a strong grasp of agile methodologies. Known for effective communication, leadership, and mentorship, fostering a collaborative environment and driving continuous improvement.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="services">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Services</h1>
-      <!-- <div class="experience-details-container"> -->
-      <div class="about-details-container">
-        <div class="details-container-exp">
-          <h2 class="experience-sub-title">My Expertises</h2>
-          <p class="experience-sub-text">
-            I focus on all things design and web related. With each of my
-            services, my goal is to deliver an impactful and elevating digital
-            experience for everyone
-          </p>
-          <div class="details-article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Web Development</h3>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Web Design</h3>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>System Design</h3>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>UI/UX Design</h3>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container-exp">
-          <h2 class="experience-sub-title">My Digital Tool Box</h2>
-          <p class="experience-sub-text">
-            These are my go to tech stack to make any projects happen. I am
-            always eager of learning more about my current stack, and new
-            technologies that could expand my horizons.
-          </p>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Javascript</h3>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>HTML</h3>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>CSS</h3>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>ReactJS</h3>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Material UI</h3>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Tailwind</h3>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Next JS</h3>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Git</h3>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Redux</h3>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Node JS</h3>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Express JS</h3>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Mongo DB</h3>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-      <!-- </div> -->
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Professional Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div>
-            <p class="company">ThinkJS</p>
-            <p>Full-stack Developer</p>
-            <p class="doj">October 2022 – Present</p>
-          </div>
-          <ul>
-            <li>
-              Redesigned Internal Tool Websites: Spearheaded the redesign of internal tool websites, reducing user-reported bugs by 90% and improving operational efficiency by 35%.
-            </li>
-            <li>
-              Optimized Communication Tools for Campaign Outreach: Overhauled communication tools, resulting in a 40% increase in campaign engagement metrics through SMS, WhatsApp, and push notifications.
-            </li>
-            <li>
-              Payment Features: Managed the seamless incorporation of payment functionalities, resulting in a substantial 20% increase in transaction success rates and elevated user contentment across multiple payment channels.
-            </li>
-            <li>
-              Engineered Incident Management and License Management Tools: Developed Incident Management and License Management tools, leading to a reduction in system downtime and a 20% improvement in license compliance.
-            </li>
-            <li>
-              Developed Attendance API: Engineered an Attendance API, enabling seamless data collection and integration with dashboards, resulting in a 40% reduction in manual data entry errors and an increase in data accuracy.
+    <p>Copyright &#169; 2024 Hitesh Vishal. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 
-            </li>
-          </ul>
-        </div>
-        <div class="about-containers">
-          <div>
-            <p class="company">Aidos</p>
-            <p>Frontend Developer</p>
-            <p class="doj">May 2021 - October 2022</p>
-          </div>
-          <ul>
-            <li>
-              Spearheaded UI Development for an AI-driven Remote Work Platform; meticulously supervised design enhancements, driving a remarkable 40% rise in user engagement and a notable 25% reduction in bounce rates in the initial three months following product introduction.
-            </li>
-            <li>Employed JavaScript and ReactJS for Front-end Development: Leveraged JavaScript and ReactJS to deliver a responsive and intuitive user interface, leading to a 30% improvement in user satisfaction scores.
-</li>
-            <li>
-              Streamlined User Experience with Axios and Swiper JS: Integrated Axios and Swiper JS to streamline data fetching and improve navigation, resulting in a 20% reduction in page load times and a 15% increase in user retention.
-
-            </li>
-            <li>
-             Integrated LinkedIn-style Post Feed: Incorporated a LinkedIn-style post feed feature, boosting user interactions by 50% and increasing platform usage duration by 35%.
-
-            </li>
-            <li>
-              Contributed to Marketplace Creation: Played a pivotal role in developing a marketplace within the platform, resulting in an increase in user transactions and a 40% growth in revenue generated through the platform.
-
-            </li>
-            <li>
-             Successfully Executed Google Ads: Implemented a Google Ads strategy, leading to improved ad click-through rates and growth in advertising revenue within the first quarter.
-
-            </li>
-          </ul>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=hiteshvishalsubramani@gmail.com"
-              target="_blank"
-              >hiteshvishalsubramani@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.linkedin.com/in/hiteshvishal/" target="_blank"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Hitesh Vishal. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
 </html>
